@@ -3,6 +3,7 @@
 @import 'variables';
 
 // ################################
+
 body,
 html {
     font-family: $font-family-base;
@@ -23,26 +24,38 @@ a {
     text-decoration: none;
     color: inherit;
 }
-ul{
+
+ul {
     margin: 0 !important;
 }
+
 // ################################
 
 // Rules
+.main-color{
+    color: $main-color;
+}
 .fa-bounce {
     animation-duration: 1.8s;
 }
-ul li a{
+input , textarea{
+    &:focus{
+        border: $main-color !important;
+        box-shadow: 0 0 0 0.25rem rgba(253, 113, 13, 0.25) !important;
+    }
+}
+ul li a {
     transition: all 0.5s !important;
     -webkit-transition: all 0.5s !important;
     -moz-transition: all 0.5s !important;
     -ms-transition: all 0.5s !important;
     -o-transition: all 0.5s !important;
 
-    &:hover{
+    &:hover {
         color: $main-color !important;
     }
 }
+
 .text-main {
     color: $main-color;
 }
@@ -287,6 +300,7 @@ i {
         font-size: 14px;
     }
 }
+
 .social i {
     margin-right: 10px;
     transition: all 0.5s;
@@ -304,14 +318,13 @@ i {
         -o-transform: translateY(-5px);
     }
 }
+
 // ################################
 
 // ###### Start of header style ######
 header {
     background-color: $header-color;
     color: white;
-
-
 
     .phone>span,
     .email>span,
@@ -352,7 +365,7 @@ nav {
     position: absolute !important;
     width: 100%;
     z-index: 99;
-
+    // background-color: salmon !important;
     // margin-top: 40px;
     background-color: transparent !important;
 
@@ -413,7 +426,8 @@ nav {
     .bg-video {
         position: relative;
         margin-bottom: -10px;
-        video{
+
+        video {
             width: 100% !important;
         }
 
@@ -604,13 +618,14 @@ nav {
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+
         img {
             transition: all 0.8s;
             -webkit-transition: all 0.8s;
             -moz-transition: all 0.8s;
             -ms-transition: all 0.8s;
             -o-transition: all 0.8s;
-}
+        }
 
         &:hover {
             img {
@@ -619,7 +634,7 @@ nav {
                 -moz-transform: scale(1.1);
                 -ms-transform: scale(1.1);
                 -o-transform: scale(1.1);
-}
+            }
         }
     }
 }
@@ -650,9 +665,11 @@ nav {
         right: 0;
         z-index: -1;
     }
-    .svg3{
+
+    .svg3 {
         margin-bottom: -5px;
     }
+
     .testimonials-content {
         margin-top: -5px;
         background-color: #2E2E2E;
@@ -667,25 +684,29 @@ nav {
         }
 
     }
+
     .testimonial-item {
-        img{
-            width: 150px ;
-            height: 150px ;
+        img {
+            width: 150px;
+            height: 150px;
             object-fit: cover;
         }
-        p{
+
+        p {
             color: white;
             margin-top: 15px;
             font-size: 14px !important;
             font-style: italic;
         }
-        .client-info{
-            h5{
+
+        .client-info {
+            h5 {
                 margin-top: 15px;
                 color: $main-color;
                 margin-bottom: 5px;
             }
-            p{
+
+            p {
                 margin-top: 0;
                 color: #ccc;
             }
@@ -701,7 +722,8 @@ nav {
 .contact {
     background-color: #F3F4F5;
     margin-top: -20px;
-    i{
+
+    i {
         color: $main-color;
         margin-bottom: 15px;
         padding: 15px;
@@ -711,58 +733,67 @@ nav {
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-}
+    }
 }
 
 // ###### End of contact style ######
 
 // ###### Start of footer style ######
-footer{
+footer {
     background-image: url('/imgs/gallery.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
     color: white;
-    &::before{
+
+    &::before {
         content: '';
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.869);
     }
-    .footer-content{
+
+    .footer-content {
         position: relative;
-        h2{
+
+        h2 {
             font-family: $font-brand;
             font-style: italic;
         }
-        h6{
+
+        h6 {
             text-transform: uppercase;
         }
-        span{
+
+        span {
             font-size: $footer-size;
             color: #cccccccd;
         }
-        a{
+
+        a {
             color: #cccccccd;
             font-size: $footer-size;
         }
-        .material-symbols-outlined{
+
+        .material-symbols-outlined {
             color: $main-color;
             font-size: 18px;
         }
 
     }
 }
-.footer-bottom{
+
+.footer-bottom {
     color: white;
     font-size: $footer-size;
     background-color: rgba(0, 0, 0, 0.888);
 
 }
+
 // ###### End of footer style ######
 
-// ###### Media Query ######
+// ###### Welcome Media Query ######
 
 // Laptop
 @media only screen and (min-width: 1200px) {
@@ -783,9 +814,34 @@ footer{
 
 // Tablet
 @media only screen and (max-width: 992px) {
-    .dot {
-        display: none !important;
+    .navbar {
+        background-color: #2E2E2E !important;
+
+        // .navbar-toggler {
+
+        //     background-color: $main-color !important;
+
+        //     .navbar-toggler-icon {
+        //         background-color: $main-color;
+        //     }
+        // }
+
+
+        // a {
+        //     &:not(.navbar-brand) {
+        //         color: #2E2E2E !important;
+
+        //         &:hover {
+        //             color: $main-color !important;
+        //         }
+        //     }
+        // }
+
+        .dot {
+            display: none !important;
+        }
     }
+
 }
 
 // Mobile
@@ -796,14 +852,16 @@ footer{
 
     .hero {
         height: 300px;
-        .bg-video{
+
+        .bg-video {
             top: 50%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
         }
+
         .hero-text {
             h1 {
                 font-size: 22px !important;
@@ -825,5 +883,37 @@ footer{
                 height: auto !important;
             }
         }
+    }
+        .register {
+            min-height: 100vh !important;
+        }
+}
+
+// ################# Register Style ####################
+
+.register , .login{
+    // min-height: calc(100vh - (118.4px + 292.78px + 41.59px) );
+    min-height: calc(100vh - 41.59px);
+    background-image: url('../../public/imgs/register.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .pass-hint{
+        font-size: $x-small-font;
+        font-style: italic;
+    }
+    .form-btn{
+        letter-spacing: 0.5px;
     }
 }

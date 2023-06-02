@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -549,8 +549,7 @@ nav .dot span {
 .testimonials .testimonial-item img {
   width: 150px;
   height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .testimonials .testimonial-item p {
   color: white;
@@ -679,7 +678,7 @@ footer .footer-content .material-symbols-outlined {
 }
 .register, .login {
   min-height: calc(100vh - 41.59px);
-  background-image: url(/images/register.jpg?0a8b60221f3b528ddbd1d8634fa35e86);
+  background-image: url("../../public/imgs/register.jpg");
   background-position: center bottom;
   background-size: cover;
   display: flex;
@@ -702,3 +701,5 @@ footer .footer-content .material-symbols-outlined {
 .register .form-btn, .login .form-btn {
   letter-spacing: 0.5px;
 }
+
+/*# sourceMappingURL=app.css.map */
