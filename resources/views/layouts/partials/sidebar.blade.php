@@ -45,11 +45,34 @@
                     <!--begin:Menu link-->
                     <div class="menu-item">
                         <!--begin:Menu link-->
-                        <a class="menu-link" href="../../demo1/dist/dashboards/ecommerce.html">
+                        <a class="menu-link" href="{{ route('categories') }}">
                             <span class="menu-bullet">
-                                <span class="bullet bullet-dot"></span>
+                                <i class="ki-duotone ki-category  fs-2">
+                                    <i class="path1"></i>
+                                    <i class="path2"></i>
+                                    <i class="path3"></i>
+                                    <i class="path4"></i>
+                                </i>
                             </span>
-                            <span class="menu-title">eCommerce</span>
+                            <span class="menu-title">{{ __('dashboard.categories') }}</span>
+                        </a>
+                        <!--end:Menu link-->
+                    </div>
+                </div>
+                <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+                    <!--begin:Menu link-->
+                    <div class="menu-item">
+                        <!--begin:Menu link-->
+                        <a class="menu-link" href="{{ route('services') }}">
+                            <span class="menu-bullet">
+                                <i class="ki-duotone ki-category  fs-2">
+                                    <i class="path1"></i>
+                                    <i class="path2"></i>
+                                    <i class="path3"></i>
+                                    <i class="path4"></i>
+                                </i>
+                            </span>
+                            <span class="menu-title">{{ __('dashboard.services') }}</span>
                         </a>
                         <!--end:Menu link-->
                     </div>
