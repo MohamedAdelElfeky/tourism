@@ -32,6 +32,7 @@
                                 </div>
                             </th>
                             <th class="min-w-200px">#</th>
+                            <th class="min-w-150px">{{ __('dashboard.photo') }}</th>
                             <th class="min-w-150px">{{ __('dashboard.name') }}</th>
                             <th class="min-w-100px text-end">{{ __('dashboard.actions') }}</th>
                         </tr>
@@ -47,6 +48,14 @@
                             </td>
                             <td>
                                 1
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="symbol symbol-45px me-5">
+                                        <img src="assets/media/stock/600x600/img-39.jpg" alt="" />
+                                    </div>
+                                    
+                                </div>
                             </td>
                             <td>
                                 category 1
@@ -89,6 +98,14 @@
                                 2
                             </td>
                             <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="symbol symbol-45px me-5">
+                                        <img src="assets/media/stock/600x600/img-39.jpg" alt="" />
+                                    </div>
+                                    
+                                </div>
+                            </td>
+                            <td>
                                 category 2
                             </td>
                             <td>
@@ -127,6 +144,14 @@
                             </td>
                             <td>
                                 3
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <div class="symbol symbol-45px me-5">
+                                        <img src="assets/media/stock/600x600/img-39.jpg" alt="" />
+                                    </div>
+                                    
+                                </div>
                             </td>
                             <td>
                                 category 3

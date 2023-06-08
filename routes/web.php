@@ -21,7 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
 Route::view('/categories', 'admin.categories.index')->name('categories');
 Route::view('/services', 'admin.services.index')->name('services');
+Route::view('/orders', 'admin.orders.index')->name('orders');
+Route::view('/users', 'admin.users.index')->name('users');
+Route::view('/customers', 'admin.customers.index')->name('customers');
+Route::view('/admin/home', 'admin.index')->name('admin.home');

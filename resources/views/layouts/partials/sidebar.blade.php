@@ -4,9 +4,11 @@
     <!--begin::Logo-->
     <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
         <!--begin::Logo image-->
-        <a href="../../demo1/dist/index.html">
-            <img alt="Logo" src="assets/media/logos/default-dark.svg" class="h-25px app-sidebar-logo-default" />
-            <img alt="Logo" src="assets/media/logos/default-small.svg" class="h-20px app-sidebar-logo-minimize" />
+        <a href="{{ route('admin.home') }}">
+            <img alt="Logo" src="{{ asset('assets/media/logos/default-dark.svg') }}"
+                class="h-25px app-sidebar-logo-default" />
+            <img alt="Logo" src="{{ asset('assets/media/logos/default-small.svg') }}"
+                class="h-20px app-sidebar-logo-minimize" />
         </a>
         <!--end::Logo image-->
         <!--begin::Sidebar toggle-->
@@ -73,6 +75,53 @@
                                 </i>
                             </span>
                             <span class="menu-title">{{ __('dashboard.services') }}</span>
+                        </a>
+                        <!--end:Menu link-->
+                    </div>
+                </div>
+                <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+                    <!--begin:Menu link-->
+                    <div class="menu-item">
+                        <!--begin:Menu link-->
+                        <a class="menu-link" href="{{ route('orders') }}">
+                            <span class="menu-bullet">
+                                <i class="ki-duotone ki-handcart fs-2"> </i>
+                            </span>
+                            <span class="menu-title">{{ __('dashboard.orders') }}</span>
+                        </a>
+                        <!--end:Menu link-->
+                    </div>
+                </div>
+                <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+                    <!--begin:Menu link-->
+                    <div class="menu-item">
+                        <!--begin:Menu link-->
+                        <a class="menu-link" href="{{ route('users') }}">
+                            <span class="menu-bullet">
+                                <i class="ki-duotone ki-user-square fs-2">
+                                    <i class="path1"></i>
+                                    <i class="path2"></i>
+                                    <i class="path3"></i>
+                                </i>
+                            </span>
+                            <span class="menu-title">{{ __('dashboard.users') }}</span>
+                        </a>
+                        <!--end:Menu link-->
+                    </div>
+                </div>
+                <div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+                    <!--begin:Menu link-->
+                    <div class="menu-item">
+                        <!--begin:Menu link-->
+                        <a class="menu-link" href="{{ route('customers') }}">
+                            <span class="menu-bullet">
+                                <i class="ki-duotone ki-user-square fs-2">
+                                    <i class="path1"></i>
+                                    <i class="path2"></i>
+                                    <i class="path3"></i>
+                                </i>
+                            </span>
+                            <span class="menu-title">{{ __('dashboard.customers') }}</span>
                         </a>
                         <!--end:Menu link-->
                     </div>

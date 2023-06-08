@@ -1,4 +1,4 @@
-<div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities"
+f<div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities"
 data-kt-drawer-activate="true" data-kt-drawer-overlay="true"
 data-kt-drawer-width="{default:'300px', 'lg': '900px'}" data-kt-drawer-direction="end"
 data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
@@ -86,7 +86,7 @@ data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activiti
                                     <!--begin::User-->
                                     <div class="symbol symbol-circle symbol-25px">
                                         <img src="assets/media/avatars/300-2.jpg" alt="img" />
-                                    </div>
+                                    </div>f
                                     <!--end::User-->
                                     <!--begin::User-->
                                     <div class="symbol symbol-circle symbol-25px">
