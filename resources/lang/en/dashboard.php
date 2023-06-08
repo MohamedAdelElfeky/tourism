@@ -22,6 +22,7 @@ return [
     'email' => 'البريد الالكتروني',
     'profits' => 'الارباح',
     'customers' => 'عملاء',
+    'Attachments' => 'Attachments',
     'Latest orders' => 'أحدث الطلبات',
     'Services evaluation' => 'تقييم الخدمات ',
 

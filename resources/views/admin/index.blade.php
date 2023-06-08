@@ -269,16 +269,16 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-20.jpg')">
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-70.jpg') }})">
                             </div>
                         </div>
                         <!--end::Symbol-->
                         <!--begin::Title-->
                         <div class="d-flex flex-row-fluid flex-wrap align-items-center">
                             <div class="flex-grow-1 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Cup & Green</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">traveling</a>
                             </div>
-                            <span class="badge badge-light-success fs-8 fw-bold my-2">Approved</span>
+                            <span class="badge fs-8 fw-bold my-2">19 Oct 2020, 7:32 am</span>
                         </div>
                         <!--end::Title-->
                     </div>
@@ -288,16 +288,16 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-19.jpg')"></div>
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-59.jpg') }})"></div>
                         </div>
                         <!--end::Symbol-->
                         <!--begin::Title-->
                         <div class="d-flex flex-row-fluid flex-wrap align-items-center">
                             <div class="flex-grow-1 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Yellow
-                                    Background</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">traveling
+                                </a>
                             </div>
-                            <span class="badge badge-light-warning fs-8 fw-bold my-2">In Progress</span>
+                            <span class="badge fs-8 fw-bold my-2">19 Oct 2020, 7:32 am</span>
                         </div>
                         <!--end::Title-->
                     </div>
@@ -307,15 +307,15 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-25.jpg')"></div>
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-78.jpg') }})"></div>
                         </div>
                         <!--end::Symbol-->
                         <!--begin::Title-->
                         <div class="d-flex flex-row-fluid flex-wrap align-items-center">
                             <div class="flex-grow-1 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Nike & Blue</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">traveling</a>
                             </div>
-                            <span class="badge badge-light-success fs-8 fw-bold my-2">Success</span>
+                            <span class="badge fs-8 fw-bold my-2">19 Oct 2020, 7:32 am</span>
                         </div>
                         <!--end::Title-->
                     </div>
@@ -325,15 +325,15 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-24.jpg')"></div>
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-57.jpg') }})"></div>
                         </div>
                         <!--end::Symbol-->
                         <!--begin::Title-->
                         <div class="d-flex flex-row-fluid flex-wrap align-items-center">
                             <div class="flex-grow-1 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Red Boots</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">traveling</a>
                             </div>
-                            <span class="badge badge-light-danger fs-8 fw-bold my-2">Rejected</span>
+                            <span class="badge fs-8 fw-bold my-2">19 Oct 2020, 7:32 am</span>
                         </div>
                         <!--end::Title-->
                     </div>
@@ -361,14 +361,14 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-17.jpg')"></div>
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-58.jpg') }})"></div>
                         </div>
                         <!--end::Symbol-->
                         <!--begin::Content-->
                         <div class="d-flex flex-row-fluid align-items-center flex-wrap my-lg-0 me-2">
                             <!--begin::Title-->
                             <div class="flex-grow-1 my-lg-0 my-2 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Cup & Green</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Service</a>
                             </div>
                             <!--end::Title-->
                             <!--begin::Section-->
@@ -394,14 +394,14 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-10.jpg')"></div>
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-59.jpg') }})"></div>
                         </div>
                         <!--end::Symbol-->
                         <!--begin::Content-->
                         <div class="d-flex flex-row-fluid align-items-center flex-wrap my-lg-0 me-2">
                             <!--begin::Title-->
                             <div class="flex-grow-1 my-lg-0 my-2 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Pink Patterns</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Service</a>
                             </div>
                             <!--end::Title-->
                             <!--begin::Section-->
@@ -427,7 +427,7 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-1.jpg')">
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-70.jpg') }})">
                             </div>
                         </div>
                         <!--end::Symbol-->
@@ -435,7 +435,7 @@
                         <div class="d-flex flex-row-fluid align-items-center flex-wrap my-lg-0 me-2">
                             <!--begin::Title-->
                             <div class="flex-grow-1 my-lg-0 my-2 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Abstract Art</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Service</a>
                             </div>
                             <!--end::Title-->
                             <!--begin::Section-->
@@ -461,15 +461,14 @@
                         <!--begin::Symbol-->
                         <div class="symbol symbol-60px symbol-2by3 me-4">
                             <div class="symbol-label"
-                                style="background-image: url('assets/media/stock/600x400/img-9.jpg')"></div>
+                                style="background-image: url({{ asset('assets/media/stock/600x400/img-69.jpg') }})"></div>
                         </div>
                         <!--end::Symbol-->
                         <!--begin::Content-->
                         <div class="d-flex flex-row-fluid align-items-center flex-wrap my-lg-0 me-2">
                             <!--begin::Title-->
                             <div class="flex-grow-1 my-lg-0 my-2 me-2">
-                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Desserts
-                                    platter</a>
+                                <a href="#" class="text-gray-800 fw-bold text-hover-primary fs-6">Service</a>
                             </div>
                             <!--end::Title-->
                             <!--begin::Section-->

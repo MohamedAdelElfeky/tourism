@@ -36,7 +36,7 @@
                 </div>
                 <div class="fv-row mb-8">
                     {{-- <label class="fs-6 fw-semibold mb-2">{{ __('dashboard.name') }}</label> --}}
-                   
+
                     <input type="number" name="date_number" class="form-control form-control-sm form-control-solid"
                         placeholder="{{ __('dashboard.enter') . ' ' . __('dashboard.price') }}" value="" />
 
@@ -47,9 +47,25 @@
                     <textarea class="form-control form-control-solid mb-8" rows="3"
                         placeholder="{{ __('dashboard.enter') . ' ' . __('dashboard.description') }}"></textarea>
                 </div>
+                <div class="fv-row mb-8">
+                    <label class="fs-6 fw-semibold mb-2">{{ __('dashboard.Attachments') }}</label>
+                    <!--begin::Dropzone-->
+                    <div class="dropzone" id="kt_modal_create_ticket_attachments">
+                        <!--begin::Message-->
+                        <div class="dz-message needsclick align-items-center">
+                            <!--begin::Icon-->
+                            <i class="ki-duotone ki-file-up fs-3hx text-primary">
+                                <span class="path1"></span>
+                                <span class="path2"></span>
+                            </i>
+                            <!--end::Icon-->
+                        </div>
+                    </div>
+                    <!--end::Dropzone-->
+                </div>
 
                 <!--end::Textarea-->
-                <div class="fv-row mb-8">
+                {{-- <div class="fv-row mb-8">
                     <!--begin::Image input-->
                     <div class="image-input image-input-outline" data-kt-image-input="true"
                         style="background-image: url('assets/media/svg/avatars/blank.svg')">
@@ -93,7 +109,7 @@
                     <!--begin::Hint-->
                     <div class="form-text">Allowed file types: png, jpg, jpeg.</div>
                     <!--end::Hint-->
-                </div>
+                </div> --}}
                 <!--begin::Users-->
             </div>
             <!--end::Modal body-->

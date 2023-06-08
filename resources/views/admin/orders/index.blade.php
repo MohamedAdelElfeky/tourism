@@ -23,7 +23,7 @@
                         <th class="text-end min-w-100px">{{ __('dashboard.created') }}</th>
                         <th class="text-end min-w-125px">{{ __('dashboard.customer') }}</th>
                         <th class="text-end min-w-100px">{{ __('dashboard.total') }}</th>
-                        <th class="text-end min-w-100px">{{ __('dashboard.status') }}</th>
+                        <th class="text-end min-w-100px">{{ __('dashboard.actions') }}</th>
                         <th class="text-end"></th>
                     </tr>
                     <!--end::Table row-->
@@ -41,9 +41,23 @@
                             <a href="#" class="text-gray-600 text-hover-primary">Mohamed</a>
                         </td>
                         <td class="text-end">630.00</td>
-                        <td class="text-end">
-                            <span class="badge py-3 px-4 fs-7 badge-light-warning">Pending</span>
-                        </td>
+                        <td>
+                            <div class="d-flex justify-content-end flex-shrink-0">
+                                <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                    <i class="ki-duotone ki-switch fs-2">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </i>
+                                </a>
+                                <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                    <i class="ki-duotone ki-pencil fs-2">
+                                        <span class="path1"></span>
+                                        <span class="path2"></span>
+                                    </i>
+                                </a>
+                                
+                            </div>
+                        </td> 
 
                     </tr>
                 </tbody>
