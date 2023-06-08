@@ -20,7 +20,7 @@ $(".email-contact")
     });
 
 // Nabvar onScroll
-let top = $(".dream").position().top;
+let top = 611.6875;
 $(window).on("scroll", () => {
     if ($(window).scrollTop() > top) {
         $(".navbar").css(
@@ -29,7 +29,7 @@ $(window).on("scroll", () => {
         );
         $(".navbar").animate(
             {
-                top: 0
+                top: 0,
             },
             500
         );
@@ -39,7 +39,30 @@ $(window).on("scroll", () => {
             "position : absolute !important; top : unset !important ;"
         );
         $(".navbar").stop({
-            top
+            top,
         });
     }
 });
+
+// Service deps
+
+$(".services-nav").on("click", ".nav-link", function () {
+    $(".services-nav .nav-link").removeClass("active");
+    $(this).addClass("active");
+    if ($(this).text() == "All") {
+        $(".services-deps .row div").fadeIn(800);
+    } else {
+        $(".services-deps .row>div").hide();
+        $(
+            ".services-deps .row div[box-type = " +
+                $(this).text().toLocaleLowerCase() +
+                "]"
+        ).fadeIn(800);
+    }
+});
+
+// service-details-page Gallery
+
+$(".service-details-page .service-imgs img").on('mouseenter' , function(){
+    $('.main-show').attr('src' , $(this).attr('src'));
+})

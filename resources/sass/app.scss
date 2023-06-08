@@ -16,34 +16,68 @@ p {
     margin: 0;
     color: $p-color;
     font-size: $p-size !important;
-    max-width: 650px;
-    margin: auto;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none !important;
+    color: unset !important;
 }
 
 ul {
     margin: 0 !important;
 }
 
+.active {
+    color: $main-color !important;
+    font-weight: bold;
+}
+
+.card {
+    height: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+
+    &:hover {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+}
+
 // ################################
 
 // Rules
-.main-color{
+.main-color {
     color: $main-color;
 }
+
+.fs-14 {
+    font-size: 14px;
+}
+
 .fa-bounce {
     animation-duration: 1.8s;
 }
-input , textarea{
-    &:focus{
+
+.form-check-input:checked {
+    color: $main-color;
+    background-color: $main-color;
+    border-color: $main-color;
+}
+
+input,
+textarea {
+    &:focus {
         border: $main-color !important;
         box-shadow: 0 0 0 0.25rem rgba(253, 113, 13, 0.25) !important;
     }
 }
+
 ul li a {
     transition: all 0.5s !important;
     -webkit-transition: all 0.5s !important;
@@ -229,7 +263,8 @@ i {
     p {
         color: $sec-desc-color;
         font-style: italic;
-        margin-top: 20px;
+        margin: 20px auto 0;
+        max-width: 650px !important;
     }
 }
 
@@ -283,7 +318,8 @@ i {
     p {
         color: white;
         font-style: italic;
-        margin-top: 20px;
+        margin: 20px auto 0;
+        max-width: 650px !important;
     }
 }
 
@@ -374,7 +410,7 @@ nav {
     }
 
     .navbar-brand {
-        color: $main-color;
+        color: $main-color !important;
         font-size: 30px;
         font-style: italic;
         font-weight: bold;
@@ -793,7 +829,257 @@ footer {
 
 // ###### End of footer style ######
 
-// ###### Welcome Media Query ######
+.register,
+.login,
+.services-page,
+.service-details-page,
+.payment-page {
+    min-height: calc(100vh - 41.59px) !important;
+}
+
+
+.services-hero,
+.payment-hero {
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    .links {
+        color: white;
+
+        i {
+            margin: 0 5px;
+            font-size: 13px;
+        }
+    }
+}
+
+// ################# Start Register&Login Style ####################
+
+.register,
+.login {
+    background-image: url('../../public/imgs/register.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .pass-hint {
+        font-size: $x-small-font;
+        font-style: italic;
+    }
+
+    .form-btn {
+        letter-spacing: 0.5px;
+    }
+}
+
+// ################# End Register&Login Style ####################
+
+
+
+// ################# Start Mutual Style Services & Service-details Page  ####################
+.services ,
+.services-page,
+.service-details-page {
+    .card {
+        position: relative;
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .service-price {
+            position: absolute;
+            color: white;
+            top: 25px;
+            right: 0px;
+            background-color: $main-color;
+            padding: 5px 15px;
+        }
+    }
+}
+
+// ################# End Mutual Style Services & Service-details Page  ####################
+
+
+
+// ################# Strat ServicesPage Style ####################
+
+.services-page {
+    .services-hero {
+        background-image: url(/imgs/services-hero.jpeg);
+    }
+
+    .services-nav {
+        background-color: $main-color;
+        color: white;
+
+        // height: 80px;
+        .nav-tabs {
+            border-bottom: none;
+        }
+
+        .nav-item {
+
+            a {
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                    color: unset !important;
+                }
+            }
+
+            .active {
+                &:hover {
+                    color: $main-color !important;
+                }
+            }
+        }
+
+    }
+
+    .search {
+        input {
+            &:focus {
+                border: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    .filter {
+        label {
+            font-size: 14px;
+        }
+
+        .rate-filter {
+            i {
+                font-size: 16px;
+            }
+
+            .fa-solid {
+                color: #ffc107;
+            }
+        }
+    }
+}
+
+// ################# End ServicesPage Style ####################
+
+// ################# Start Service-details Page  ####################
+.service-details-page {
+    .services-hero {
+        background-image: url(/imgs/service-details.jpeg);
+    }
+
+    .service-details-text {
+        .service-desc {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+        }
+
+        .see-more {
+            cursor: pointer;
+        }
+    }
+
+    .service-imgs {
+        img {
+            width: 120px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+    }
+
+    .service-info {
+        i {
+            color: $main-color;
+        }
+
+        .price-before {
+            text-decoration: line-through;
+        }
+    }
+
+    .customer-reviews {
+        i {
+            color: #ccc;
+        }
+
+        .review-text {
+            span {
+                font-size: 14px !important;
+                font-style: italic;
+            }
+        }
+    }
+
+    .related .all-related {
+        .related-service {
+            margin-left: 12px;
+
+            .related-service-info {
+
+                a,
+                i {
+                    font-size: 14px;
+                    color: white !important;
+                }
+
+                .btn {
+                    background-color: $main-color;
+                }
+            }
+        }
+
+    }
+}
+
+// ################# End Service-details Page  ####################
+
+// ################# Start Payment Page  ####################
+.payment-page {
+    .payment-hero {
+        background-image: url('../../public/imgs/payment-hero.jpeg');
+        background-position: bottom;
+    }
+}
+
+// ################# End Payment Page  ####################
+
+// ###### Start Media Query ######
 
 // Laptop
 @media only screen and (min-width: 1200px) {
@@ -815,27 +1101,7 @@ footer {
 // Tablet
 @media only screen and (max-width: 992px) {
     .navbar {
-        background-color: #2E2E2E !important;
-
-        // .navbar-toggler {
-
-        //     background-color: $main-color !important;
-
-        //     .navbar-toggler-icon {
-        //         background-color: $main-color;
-        //     }
-        // }
-
-
-        // a {
-        //     &:not(.navbar-brand) {
-        //         color: #2E2E2E !important;
-
-        //         &:hover {
-        //             color: $main-color !important;
-        //         }
-        //     }
-        // }
+        background-color: rgba(0, 0, 0, 0.888) !important;
 
         .dot {
             display: none !important;
@@ -884,36 +1150,10 @@ footer {
             }
         }
     }
-        .register {
-            min-height: 100vh !important;
-        }
+
+    .register {
+        min-height: 100vh !important;
+    }
 }
 
-// ################# Register Style ####################
-
-.register , .login{
-    // min-height: calc(100vh - (118.4px + 292.78px + 41.59px) );
-    min-height: calc(100vh - 41.59px);
-    background-image: url('../../public/imgs/register.jpg');
-    background-position: center bottom;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-    .pass-hint{
-        font-size: $x-small-font;
-        font-style: italic;
-    }
-    .form-btn{
-        letter-spacing: 0.5px;
-    }
-}
+// ###### End Media Query ######

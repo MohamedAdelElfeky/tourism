@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-/* Error: Can't find stylesheet to import.
- *   ,
- * 8 | @import '~bootstrap/scss/bootstrap';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   resources/sass/app.scss 8:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 8 \2502  @import '~bootstrap/scss/bootstrap';\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   resources/sass/app.scss 8:9  root stylesheet";
-}
-=======
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 body,
 html {
@@ -29,21 +10,60 @@ p {
   margin: 0;
   color: #444;
   font-size: 16px !important;
-  max-width: 650px;
-  margin: auto;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: unset !important;
 }
 
 ul {
   margin: 0 !important;
 }
 
+.active {
+  color: #ff681a !important;
+  font-weight: bold;
+}
+
+.card {
+  height: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.main-color {
+  color: #ff681a;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
 .fa-bounce {
   animation-duration: 1.8s;
+}
+
+.form-check-input:checked {
+  color: #ff681a;
+  background-color: #ff681a;
+  border-color: #ff681a;
+}
+
+input:focus,
+textarea:focus {
+  border: #ff681a !important;
+  box-shadow: 0 0 0 0.25rem rgba(253, 113, 13, 0.25) !important;
 }
 
 ul li a {
@@ -211,7 +231,8 @@ i {
 .sec-header p {
   color: #666;
   font-style: italic;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  max-width: 650px !important;
 }
 
 .sec-header-dark {
@@ -259,7 +280,8 @@ i {
 .sec-header-dark p {
   color: white;
   font-style: italic;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  max-width: 650px !important;
 }
 
 .sec-content {
@@ -334,7 +356,7 @@ nav .container-fluid {
   background-color: unset;
 }
 nav .navbar-brand {
-  color: #ff681a;
+  color: #ff681a !important;
   font-size: 30px;
   font-style: italic;
   font-weight: bold;
@@ -636,6 +658,178 @@ footer .footer-content .material-symbols-outlined {
   background-color: rgba(0, 0, 0, 0.888);
 }
 
+.register,
+.login,
+.services-page,
+.service-details-page,
+.payment-page {
+  min-height: calc(100vh - 41.59px) !important;
+}
+
+.services-hero,
+.payment-hero {
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+.services-hero::before,
+.payment-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.services-hero .links,
+.payment-hero .links {
+  color: white;
+}
+.services-hero .links i,
+.payment-hero .links i {
+  margin: 0 5px;
+  font-size: 13px;
+}
+
+.register,
+.login {
+  background-image: url("../../public/imgs/register.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.register::before,
+.login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.register .pass-hint,
+.login .pass-hint {
+  font-size: 12px;
+  font-style: italic;
+}
+.register .form-btn,
+.login .form-btn {
+  letter-spacing: 0.5px;
+}
+
+.services .card,
+.services-page .card,
+.service-details-page .card {
+  position: relative;
+}
+.services .card p,
+.services-page .card p,
+.service-details-page .card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.services .card .service-price,
+.services-page .card .service-price,
+.service-details-page .card .service-price {
+  position: absolute;
+  color: white;
+  top: 25px;
+  right: 0px;
+  background-color: #ff681a;
+  padding: 5px 15px;
+}
+
+.services-page .services-hero {
+  background-image: url(/imgs/services-hero.jpeg);
+}
+.services-page .services-nav {
+  background-color: #ff681a;
+  color: white;
+}
+.services-page .services-nav .nav-tabs {
+  border-bottom: none;
+}
+.services-page .services-nav .nav-item a {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.services-page .services-nav .nav-item a:hover {
+  color: unset !important;
+}
+.services-page .services-nav .nav-item .active:hover {
+  color: #ff681a !important;
+}
+.services-page .search input:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+.services-page .filter label {
+  font-size: 14px;
+}
+.services-page .filter .rate-filter i {
+  font-size: 16px;
+}
+.services-page .filter .rate-filter .fa-solid {
+  color: #ffc107;
+}
+
+.service-details-page .services-hero {
+  background-image: url(/imgs/service-details.jpeg);
+}
+.service-details-page .service-details-text .service-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.service-details-page .service-details-text .see-more {
+  cursor: pointer;
+}
+.service-details-page .service-imgs img {
+  width: 120px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.service-details-page .service-info i {
+  color: #ff681a;
+}
+.service-details-page .service-info .price-before {
+  text-decoration: line-through;
+}
+.service-details-page .customer-reviews i {
+  color: #ccc;
+}
+.service-details-page .customer-reviews .review-text span {
+  font-size: 14px !important;
+  font-style: italic;
+}
+.service-details-page .related .all-related .related-service {
+  margin-left: 12px;
+}
+.service-details-page .related .all-related .related-service .related-service-info a,
+.service-details-page .related .all-related .related-service .related-service-info i {
+  font-size: 14px;
+  color: white !important;
+}
+.service-details-page .related .all-related .related-service .related-service-info .btn {
+  background-color: #ff681a;
+}
+
+.payment-page .payment-hero {
+  background-image: url("../../public/imgs/payment-hero.jpeg");
+  background-position: bottom;
+}
+
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1140px;
@@ -648,7 +842,10 @@ footer .footer-content .material-symbols-outlined {
   }
 }
 @media only screen and (max-width: 992px) {
-  .dot {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.888) !important;
+  }
+  .navbar .dot {
     display: none !important;
   }
 }
@@ -679,7 +876,9 @@ footer .footer-content .material-symbols-outlined {
   .offers .card > img {
     height: auto !important;
   }
+  .register {
+    min-height: 100vh !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
->>>>>>> 7166a10 (first commit)
