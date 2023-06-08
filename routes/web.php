@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
-    return view('welcome');
-});
+// Route::get('/home', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 
@@ -28,3 +28,20 @@ Route::view('/orders', 'admin.orders.index')->name('orders');
 Route::view('/users', 'admin.users.index')->name('users');
 Route::view('/customers', 'admin.customers.index')->name('customers');
 Route::view('/admin/home', 'admin.index')->name('admin.home');
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/service-details', function () {
+    return view('service-details');
+});
+Route::get('/payment', function () {
+    return view('payment');
+});
