@@ -83,8 +83,11 @@
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                     aria-hidden="true">
+
                                     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                                        <div class="modal-content">
+                                        <div class="modal-content px-3">
+                                            {{-- <div class="container"> --}}
+
                                             <div class="modal-header">
                                                 <h4 class="modal-title" id="exampleModalLabel">
                                                     Service Details Name
@@ -100,34 +103,55 @@
                                                     pariatur iure sint? Sit voluptas fugiat necessitatibus nobis aperiam
                                                     rem?
                                                     Ipsa suscipit quo non fugit!
-                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Accusantium
                                                     cum
-                                                    officia quae. A ratione odio veritatis minima magni repellat rerum esse
+                                                    officia quae. A ratione odio veritatis minima magni repellat rerum
+                                                    esse
                                                     repellendus delectus fugit! Deleniti facilis sequi ad aliquam
                                                     reiciendis?
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius id
                                                     excepturi
                                                     aspernatur nesciunt illo, modi labore? Fugiat, similique modi est
                                                     doloremque
-                                                    sint corporis, veritatis itaque tempora, molestias eum cum assumenda.
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque
-                                                    repellendus, odio veritatis debitis voluptatum iure recusandae ratione
-                                                    maiores. Incidunt itaque illo quia quos assumenda, enim odit obcaecati
+                                                    sint corporis, veritatis itaque tempora, molestias eum cum
+                                                    assumenda.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+                                                    neque
+                                                    repellendus, odio veritatis debitis voluptatum iure recusandae
+                                                    ratione
+                                                    maiores. Incidunt itaque illo quia quos assumenda, enim odit
+                                                    obcaecati
                                                     cumque maxime!
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                                    quos quo facere, numquam dicta autem suscipit fugit cum placeat
+                                                    molestiae sed similique necessitatibus eaque, debitis inventore
+                                                    rerum, aliquam ipsum laboriosam.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                                                    doloremque odit similique sapiente, consectetur vero quas beatae
+                                                    dolore architecto! Adipisci beatae explicabo obcaecati quo mollitia
+                                                    id pariatur, molestias officia eius.
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+                                                    veritatis distinctio cupiditate aspernatur voluptas odit
+                                                    consequatur, blanditiis consectetur, deleniti velit at accusantium
+                                                    laudantium eligendi? Magni mollitia alias dolorem perspiciatis
+                                                    animi.
                                                 </p>
-                                            </div>
-                                            <div class="modal-footer justify-content-center">
-                                                <div class="book-now btn info-btn rounded-0">
-                                                    <a class="d-flex align-items-center justify-content-center"
-                                                        href="/payment">
-                                                        Book Now
-                                                        <span class="material-symbols-outlined">
-                                                            chevron_right
-                                                        </span>
-                                                    </a>
+                                                <div class="modal-footer justify-content-center">
+                                                    <div class="book-now btn info-btn rounded-0">
+                                                        <a class="d-flex align-items-center justify-content-center"
+                                                            href="/payment">
+                                                            Book Now
+                                                            <span class="material-symbols-outlined">
+                                                                chevron_right
+                                                            </span>
+                                                        </a>
 
+                                                    </div>
                                                 </div>
                                             </div>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -163,17 +187,18 @@
                         <hr>
 
                         <div class="review-text mt-2">
+                            <div class="rate my-2">
+                                <i class="fa-solid fa-star active-rate"></i>
+                                <i class="fa-solid fa-star active-rate"></i>
+                                <i class="fa-solid fa-star active-rate"></i>
+                                <i class="fa-solid fa-star active-rate"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas quaerat voluptate, saepe
                                 fugit culpa perferendis. Esse molestiae, minus, explicabo, adipisci maxime repellat
                                 perspiciatis deserunt nulla eius doloribus ad distinctio!
                             </span>
-                            <div class="rate mt-2">
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+
                         </div>
                     </div>
                     <div class="review mt-3 border p-3 rounded">
@@ -188,16 +213,66 @@
                         </div>
                         <hr>
                         <div class="review-text mt-2">
+                            <div class="rate my-2">
+                                <i class="fa-solid fa-star active-rate"></i>
+                                <i class="fa-solid fa-star active-rate"></i>
+                                <i class="fa-solid fa-star active-rate"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas quaerat voluptate, saepe
                                 fugit culpa perferendis. Esse molestiae, minus, explicabo, adipisci maxime repellat
                                 perspiciatis deserunt nulla eius doloribus ad distinctio!
                             </span>
-                            <div class="rate mt-2">
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="add-review btn info-btn rounded-0 mt-3">
+                    <a class="d-flex align-items-center justify-content-center" data-bs-toggle="modal"
+                        data-bs-target="#comment">
+                        Write a rewive
+                         <span class="material-symbols-outlined">
+                            chevron_right
+                        </span> </a>
+
+                </div>
+                <div class="modal fade" id="comment" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="exampleModalLabel">
+                                    Review
+                                </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body pt-3">
+                                <div class="add-rate my-2">
+                                    <i class="fa-solid fa-star my-star" data-star='1'></i>
+                                    <i class="fa-solid fa-star my-star" data-star='2'></i>
+                                    <i class="fa-solid fa-star my-star" data-star='3'></i>
+                                    <i class="fa-solid fa-star my-star" data-star='4'></i>
+                                    <i class="fa-solid fa-star my-star" data-star='5'></i>
+                                    {{-- <input type="number" readonly id="output"> --}}
+
+                                </div>
+                                <div class="mt-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Describe your experience (optional)"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <div class="book-now btn info-btn rounded-0">
+                                    <a class="d-flex align-items-center justify-content-center" href="">
+                                        Post
+                                        <span class="material-symbols-outlined">
+                                            chevron_right
+                                        </span>
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
                     </div>

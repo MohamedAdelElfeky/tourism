@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -584,8 +584,7 @@ nav .dot span {
 .testimonials .testimonial-item img {
   width: 150px;
   height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .testimonials .testimonial-item p {
   color: white;
@@ -710,7 +709,7 @@ footer .footer-content .material-symbols-outlined {
 
 .register,
 .login {
-  background-image: url(/images/register.jpg?0a8b60221f3b528ddbd1d8634fa35e86);
+  background-image: url("../../public/imgs/register.jpg");
   background-position: center bottom;
   background-size: cover;
   display: flex;
@@ -849,7 +848,7 @@ footer .footer-content .material-symbols-outlined {
 }
 
 .payment-page .payment-hero {
-  background-image: url(/images/payment-hero.jpeg?a7b3773f774d91ec78a856f177f614c7);
+  background-image: url("../../public/imgs/payment-hero.jpeg");
   background-position: bottom;
 }
 
@@ -909,3 +908,5 @@ footer .footer-content .material-symbols-outlined {
     min-height: 100vh !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

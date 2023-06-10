@@ -66,3 +66,11 @@ $(".services-nav").on("click", ".nav-link", function () {
 $(".service-details-page .service-imgs img").on('mouseenter' , function(){
     $('.main-show').attr('src' , $(this).attr('src'));
 })
+
+// service-details-page Rating
+
+$(".service-details-page .add-rate .my-star").on("click", function () {
+    $(this).addClass("active-rate").prevAll().addClass("active-rate");
+    $(this).nextAll().removeClass("active-rate");
+    console.log($(this).attr('data-star'));
+});

@@ -77,8 +77,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
-                    <img src="{{ asset('imgs/logo.png') }}" alt="logo" width="40px">
-                    <img src="{{ asset('imgs/logo-text.png') }}" alt="logo" width="150px">
+                    Tourism
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

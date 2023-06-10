@@ -29,7 +29,10 @@ ul {
 
 .active {
     color: $main-color !important;
-    font-weight: bold;
+}
+
+.active-rate {
+    color: #ffc107 !important;
 }
 
 .card {
@@ -156,7 +159,7 @@ ul li a {
 
 .info-btn {
     background-color: $main-color;
-    color: white;
+    color: white !important;
     // border: 1px solid white;
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -179,7 +182,7 @@ ul li a {
 
     &:hover {
         background-color: transparent;
-        color: black;
+        color: black !important;
 
         .material-symbols-outlined {
             margin-left: 10px;
@@ -858,7 +861,14 @@ footer {
 
     .links {
         color: white;
-
+        .nav-link{
+            color: $main-color ;
+        }
+        .nav-link.active{
+            color: white !important;
+            font-weight: bold;
+            text-decoration: underline;
+        }
         i {
             margin: 0 5px;
             font-size: 13px;
@@ -902,7 +912,7 @@ footer {
 
 
 // ################# Start Mutual Style Services & Service-details Page  ####################
-.services ,
+.services,
 .services-page,
 .service-details-page {
     .card {
@@ -976,7 +986,7 @@ footer {
         }
     }
 
-    .filter {
+    .filter , .filter-side {
         label {
             font-size: 14px;
         }
@@ -990,6 +1000,9 @@ footer {
                 color: #ffc107;
             }
         }
+    }
+    .offcanvas{
+        width: 300px;
     }
 }
 
@@ -1042,6 +1055,16 @@ footer {
             span {
                 font-size: 14px !important;
                 font-style: italic;
+            }
+        }
+
+        .add-rate {
+            i {
+                cursor: pointer;
+
+                &:hover {
+                    color: #ffc107;
+                }
             }
         }
     }
@@ -1107,7 +1130,14 @@ footer {
             display: none !important;
         }
     }
-
+    .services-page{
+        .filter{
+            display: none !important;
+        }
+        .offcanvas-btn , .offcanvas{
+            display: flex !important;
+        }
+    }
 }
 
 // Mobile
