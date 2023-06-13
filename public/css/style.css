@@ -23,7 +23,10 @@ ul {
 
 .active {
   color: #ff681a !important;
-  font-weight: bold;
+}
+
+.active-rate {
+  color: #ffc107 !important;
 }
 
 .card {
@@ -138,7 +141,7 @@ ul li a:hover {
 
 .info-btn {
   background-color: #ff681a;
-  color: white;
+  color: white !important;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -159,7 +162,7 @@ ul li a:hover {
 }
 .info-btn:hover {
   background-color: transparent;
-  color: black;
+  color: black !important;
 }
 .info-btn:hover .material-symbols-outlined {
   margin-left: 10px;
@@ -688,6 +691,16 @@ footer .footer-content .material-symbols-outlined {
 .payment-hero .links {
   color: white;
 }
+.services-hero .links .nav-link,
+.payment-hero .links .nav-link {
+  color: #ff681a;
+}
+.services-hero .links .nav-link.active,
+.payment-hero .links .nav-link.active {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
 .services-hero .links i,
 .payment-hero .links i {
   margin: 0 5px;
@@ -772,14 +785,17 @@ footer .footer-content .material-symbols-outlined {
   border: none !important;
   box-shadow: none !important;
 }
-.services-page .filter label {
+.services-page .filter label, .services-page .filter-side label {
   font-size: 14px;
 }
-.services-page .filter .rate-filter i {
+.services-page .filter .rate-filter i, .services-page .filter-side .rate-filter i {
   font-size: 16px;
 }
-.services-page .filter .rate-filter .fa-solid {
+.services-page .filter .rate-filter .fa-solid, .services-page .filter-side .rate-filter .fa-solid {
   color: #ffc107;
+}
+.services-page .offcanvas {
+  width: 300px;
 }
 
 .service-details-page .services-hero {
@@ -812,6 +828,12 @@ footer .footer-content .material-symbols-outlined {
 .service-details-page .customer-reviews .review-text span {
   font-size: 14px !important;
   font-style: italic;
+}
+.service-details-page .customer-reviews .add-rate i {
+  cursor: pointer;
+}
+.service-details-page .customer-reviews .add-rate i:hover {
+  color: #ffc107;
 }
 .service-details-page .related .all-related .related-service {
   margin-left: 12px;
@@ -847,6 +869,12 @@ footer .footer-content .material-symbols-outlined {
   }
   .navbar .dot {
     display: none !important;
+  }
+  .services-page .filter {
+    display: none !important;
+  }
+  .services-page .offcanvas-btn, .services-page .offcanvas {
+    display: flex !important;
   }
 }
 @media only screen and (max-width: 768px) {

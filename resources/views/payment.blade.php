@@ -31,7 +31,7 @@
 
                 <div class="col-lg-6">
                     <h6 class="mb-3 fw-bold">Payment Method</h6>
-                    <div class="form-box bg-white p-4 rounded shadow">
+               <div class="form-box bg-white p-4 rounded shadow">
                         <div>
                             <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1"
                                 value="" aria-label="...">

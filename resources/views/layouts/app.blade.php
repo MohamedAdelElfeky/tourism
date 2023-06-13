@@ -11,7 +11,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    {{-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> --}}
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -25,8 +24,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
@@ -77,7 +76,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
-                    Tourism
+                    <img class="img-fluid ms-3" style="max-width: 200px"
+                        src="{{ asset('/imgs/logo/Asset 9mlt.png') }}">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -159,9 +159,14 @@
                     <div class="footer-content">
                         <div class="row g-4">
                             <div class="col-md-4">
-                                <h2 class="fw-bold italic">Tourism</h2>
-                                <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Repellendus, minus facere fugiat iste reprehenderit labore!</span>
+                                <a class="d-flex flex-column " href="{{ url('/') }}">
+                                    <img class="img-fluid ms-5" style="max-width: 70px"
+                                        src="{{ asset('/imgs/logo/Asset 4mlt.png') }}">
+                                    <img class="img-fluid my-2" style="max-width: 200px"
+                                        src="{{ asset('/imgs/logo/Asset 1mlt.png') }}">
+                                </a>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Repellendus, minus </span>
                             </div>
                             <div class="col-md-4">
                                 <h6>Quick Links</h6>
@@ -234,7 +239,7 @@
                                     <div class="open-at align-items-center d-flex mt-1">
                                         <span class="material-symbols-outlined me-2">
                                             language
-                                            </span>
+                                        </span>
                                         <a href=""><span class="fw-light text-small">www.tourism.com</span></a>
                                     </div>
 
@@ -243,11 +248,11 @@
                                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                                     <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                                 </div>
-                            </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
 
         </footer>
@@ -255,8 +260,12 @@
 
         <div class="footer-bottom py-5 text-center">
             <div class="container">
-                    <div class="footer-copyrights">
-                        ©2020 All Rights Reserved by <a href="">Tourism</a>
+                <div class="footer-copyrights d-flex justify-content-center">
+                    ©2020 All Rights Reserved by <a class="" href="{{ url('/') }}">
+
+                        <img class="img-fluid ms-2 pt-1" style="max-width: 200px"
+                            src="{{ asset('/imgs/logo/Asset 5mlt.png') }}">
+                    </a>
                 </div>
             </div>
         </div>
